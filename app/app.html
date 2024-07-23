@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Huu Vinh</title>
+    <link rel="stylesheet" href="/app/globals.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/app/script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/app/darkmode.js"></script>
+    <script src="/api/repositories.js"></script>
+
+</head>
+
+<body class="text-slate-100">
+    <div class="home_section" id="home">
+        <div id="navbar" class="text-slate-100 menu_nav fixed top-0 w-full transition-transform duration-300">
+            <span class="hover-effect"><a href="#home">Home</a></span>
+            <span class="hover-effect"><a href="#about">About me</a></span>
+            <span class="hover-effect"><a href="#projects">My project</a></span>
+            <span>
+                <a href="#contact">
+                    <button class="rounded-full border-solid border-2 hover:border-slate-400 custom-button">Contact
+                        <i class="fa fa-location-arrow" style="font-size:2vw"></i>
+                    </button>
+                </a>
+
+            </span>
+
+            <!-- <span><button onclick="toggleDarkMode()" aria-label="Toggle dark mode"
+                    class="rounded-full border-solid border-2 hover:bg-slate-700 " style="padding: 0.5vw;">
+                    <svg width="30" height="30" id="light-icon" aria-hidden="true" style="display: block;">
+                        <circle cx="15" cy="15" r="6" fill="currentColor" />
+                        <line id="ray" stroke="currentColor" stroke-width="2" stroke-linecap="round" x1="15" y1="1"
+                            x2="15" y2="4"></line>
+                        <use href="#ray" transform="rotate(45 15 15)" />
+                        <use href="#ray" transform="rotate(90 15 15)" />
+                        <use href="#ray" transform="rotate(135 15 15)" />
+                        <use href="#ray" transform="rotate(180 15 15)" />
+                        <use href="#ray" transform="rotate(225 15 15)" />
+                        <use href="#ray" transform="rotate(270 15 15)" />
+                        <use href="#ray" transform="rotate(315 15 15)" />
+                    </svg>
+                    <svg width="30" height="30" id="dark-icon" aria-hidden="true" style="display: none;">
+                        <path fill="currentColor" d="M 23, 5 A 12 12 0 1 0 23, 25 A 12 12 0 0 1 23, 5" />
+                    </svg>
+                </button>
+                <script src="/app/darkmode.js"></script>
+            </span> -->
+        </div>
+        <div class="home_nav">
+            <span class="transition duration-500 ease-in-out transform hover:scale-110" style="width: 25%;">
+                <img src="/assets/img/MyProfile.jpg" alt="Profile" class="img_profile">
+            </span>
+        </div>
+
+        <div class="sub_text_about" id="about">
+
+            <span class="title_sub">
+                <p>Hola, I'm Huu Vinh <i class="fa fa-hand-peace-o" style="font-size:4vw;"></i></p>
+
+            </span>
+            <span class="content_sub">
+                <p>I'm 20 years old and studying Software Engineering at the Industrial University of Ho Chi Minh City
+                    in Viet Nam. I aspire to advance in web programming, driven by a relentless pursuit of knowledge and
+                    exposure to emerging technologies. Embracing the belief that one's limits are boundless, I
+                    continuous learning and exploration. In the future, I contemplate delving into AI or blockchain in
+                    order to staying abreast of evolving trends within the information technology sector. </p>
+            </span>
+        </div>
+
+        <div class="hero_text">
+            <p style="font-style: italic;" id="typing-text"></p>
+            <p>Developer</p>
+        </div>
+        <script src="/components/effect.js"></script>
+    </div>
+
+    <div class="flex flex-col p-12 gap-y-4 text-slate-100" style="margin-top: 6vh">
+        <p style="font-size: 5vw;">EDUCATION</p>
+        <div class="flex-0 flex-row items-start content-stretch gap-x-8">
+
+            <div class="flex flex-row items-start content-stretch gap-x-8 max-w-fit mb-4">
+                <div className="basis-32 flex-none
+                text-right
+                text-lg lg:text-xl
+                align-top inline-block
+                font-sans
+                normal-color
+                ">
+                    August 2021<br />- Present
+                </div>
+                <div class="basis-2 
+                flex
+                flex-col 
+                self-stretch
+                items-center justify-stretch gap-y-4">
+                    <div class="flex grow-0 
+                    rounded-full size-4 self-center 
+                normal-color"></div>
+                    <div class="flex flex-1 grow justify-self-stretch h-full w-px rounded-full self-center 
+                normal-color"></div>
+
+                </div>
+                <div class="flex min-w-52 flex-col text-xl lg:text-2xl gap-y-2">
+                    <div class="normal-color-text align-text-top inline-block text-2xl lg:text-3xl ">
+                        <a class="hover:text-slate-300" href="https://iuh.edu.vn/">
+                            <img src="/assets/img/Logo-IUH.jpg" alt="IUH Logo" class="inline-block w-8 h-8 mr-2"
+                                style="color: transparent;">
+                            Industrial University of Ho Chi Minh City (IUH) - Student
+                        </a>
+                    </div>
+                    <div class="font-extralight max-w-prose ">I'm studying Sortware Engineering at the Industrial
+                        University of Ho Chi Minh City, with focusing on web development using Java and data integration
+                        on cloud platforms </div>
+                    <div class="h-4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="project-tittle">
+        <p>MY PROJECTS</p>
+    </div> -->
+    <span id="projects" style="font-size: 5vw;margin-left: 2vw">MY PROJECTS</span>
+    <a href="https://github.com/HuuVinh0901?tab=repositories" class="hover:text-slate-300 font-extralight" style="font-size: 2vw;margin-left: 4vw">View all<i
+            class="fa fa-arrow-right" style="font-size:2vw; margin-left: 1vw;"></i></a>
+    <div id="repos" class="max-w-7xl mx-auto p-8 grid grid-cols-1 sm:grid-cols-2 gap-8">
+
+    </div> 
+
+
+    <p style="font-size: 5vw;margin-left: 2vw;">CONTACT</p>
+
+    <div class="footer" id="contact">
+
+        <div class="footer_content">
+
+            <div class="footer_info">
+                <p style=" font-weight: bold;">Let's work together!</p>
+                <span>
+                    <p style="font-size: 2vw;font-weight: bold;">Email</p>
+                    <p style="font-size: 1vw">phamhuuvinh912003@gmail.com</p>
+                </span>
+                <span>
+                    <p style="font-size: 2vw;font-weight: bold;">Phone</p>
+                    <p style="font-size: 1vw">(+84)355420475</p>
+                </span>
+                <span>
+                    <p style="font-size: 2vw;font-weight: bold;">Address</p>
+                    <p style="font-size: 1vw">Bình Thạnh, TPHCM</p>
+                </span>
+            </div>
+            <div class=" footer_writing">
+                <!-- <p style="font-size: 1vw;">If you have a question or contact me, you can leave a message. I will respond soon </p> -->
+                <div class="form-container">
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <input type="text" placeholder="Email"
+                                class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 text_input"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 text_area"
+                                placeholder="  Message" id="text_area" rows="10"></textarea>
+                        </div>
+
+                        <button class="rounded-full border-solid border-2 hover:border-slate-400 submit">Submit
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer_contact_link">
+            <div class="title_contact">
+                <p style="font-size: 2vw;margin-left: 2vw;font-weight: bold;">Find me on</p>
+            </div>
+            <div class="footer_link_contact">
+
+
+                <div class="icon_contact">
+                    <a href="https://github.com/HuuVinh0901"><i class="fa fa-github"
+                            style="font-size:4vw;color: #0d36bb;"></i></a>
+                    <a href="https://www.facebook.com/vinhhuudev/"><i class="fa fa-facebook-official"
+                            style="font-size:4vw;color: #0d36bb;"></i></a>
+                    <a href="https://www.instagram.com/p.hvinhh?igsh=MWVnZDY4c2dwcDdpYQ%3D%3D&utm_source=qr"><i
+                            class="fa fa-instagram" style="font-size:4vw;color: #0d36bb;"></i></a>
+                    <a href="https://www.linkedin.com/in/vinh-phạm-hữu-0229b6301"><i class="fa fa-linkedin-square"
+                            style="font-size:4vw;color: #0d36bb;"></i></a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="/components/scrollnavbar.js"></script>
+</body>
+
+</html>

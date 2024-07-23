@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: "Poppins", serif;
+    overflow-x: hidden;
+    width: 100%;
+    background-image: url('/assets/img/background.jpg');
+    /* Đường dẫn tới tệp hình ảnh của bạn */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+.home_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 150vh;
+    font-size: 1.6vw;
+}
+
+.hover-effect a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.hover-effect a:hover {
+    transform: scale(1.2);
+}
+
+.home_nav {
+    margin-top: 8vh;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60vh;
+    flex-direction: column;
+    margin-left: 2vw;
+}
+
+.menu_nav {
+    top: 0;
+    width: 100%;
+    /* position: fixed; */
+    height: 8vh;
+    justify-content: flex-end;
+    display: flex;
+    gap: 7vw;
+    padding-right: 3vw;
+    align-items: center;
+    transition: top 0.3s;
+}
+
+
+.img_profile {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.custom-button {
+    padding: 0.2vw 0.7vw;
+    /* Thêm khoảng trống trong button */
+    display: flex;
+    /* Sử dụng flexbox để canh giữa nội dung */
+    align-items: center;
+    /* Canh giữa theo chiều dọc */
+    justify-content: center;
+    /* Canh giữa theo chiều ngang */
+    gap: 0.5vw;
+    /* Khoảng cách giữa chữ và icon */
+    transition: 0.3s;
+    /* Hiệu ứng khi hover */
+}
+
+.custom-button:hover {
+    border-color: slategray;
+    /* Thay đổi màu viền khi hover */
+    transform: scale(1.1);
+    /* Hiệu ứng phóng to khi hover */
+}
+
+.sub_text_about {
+    flex-direction: column;
+    font-size: 1vw;
+    height: 50vh;
+    margin-right: 2vw;
+}
+
+.title_sub {
+    display: flex;
+    width: 100%;
+    height: 28%;
+    justify-content: flex-end;
+
+}
+
+.title_sub p {
+    width: 50%;
+    border-bottom: 0.05vw solid gray;
+    align-items: center;
+    font-size: 4vw;
+
+}
+
+.content_sub {
+    display: flex;
+    width: 100%;
+    height: 72%;
+    justify-content: flex-end;
+}
+
+.content_sub p {
+    display: flex;
+    width: 50%;
+    font-size: 1.5vw;
+    text-align: justify;
+}
+
+.hero_text {
+    font-size: 10vw;
+    margin-left: 2vw;
+    height: 40%;
+
+}
+
+#typing-text::after {
+    content: '|';
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.sub_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1vw;
+}
+.project-tittle{
+    width: 100%;
+    height: 8vw;
+    background-color: #2106b9;
+}
+.footer {
+    width: 100%;
+    height: 80vh;
+    margin-top: 1vw;
+    display: flex;
+    flex-direction: column;
+
+    font-size: 1vw;
+
+}
+
+.footer_content {
+    font-size: 4vw;
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.footer_info {
+    height: 100%;
+    width: 50%;
+    flex-direction: column;
+
+}
+
+.footer_info p {
+    width: 50%;
+    margin-left: 6vw;
+}
+
+.footer_writing {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_contact_link {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.title_contact {
+    width: 100%;
+    height: 50%;
+}
+
+.footer_link_contact {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: flex-start;
+
+    align-items: center;
+}
+
+.icon_contact {
+    width: 40%;
+    height: 100%;
+    margin-left: 40%;
+    gap: 2vw;
+    display: flex;
+}
+
+.icon_contact a:hover {
+    transform: scale(1.1);
+}
+
+.form-container {
+
+
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.text_input {
+    width: 100%;
+    height: 30%;
+    border: 0.15vw solid #2106b9;
+    border-radius: 3%;
+    font-size: 0.9rem;
+    padding: 1vw;
+}
+
+.text_area {
+    margin-top: 1vw;
+    width: 100%;
+    height: 50%;
+    border: 0.15vw solid #2106b9;
+    border-radius: 3%;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+}
+
+.submit {
+    padding: 0.2vw 0.7vw;
+    /* Thêm khoảng trống trong button */
+    display: flex;
+    /* Sử dụng flexbox để canh giữa nội dung */
+    align-items: center;
+    /* Canh giữa theo chiều dọc */
+    justify-content: center;
+    /* Canh giữa theo chiều ngang */
+    gap: 0.5vw;
+    /* Khoảng cách giữa chữ và icon */
+    transition: 0.3s;
+    height: 8%;
+    width: 15%;
+    font-size: 0.9rem;
+
+}
+
+
+.flex-col {
+    flex-direction: column;
+    /* background-color: black; */
+}
+
+.h-full {
+    height: 100%;
+
+}
