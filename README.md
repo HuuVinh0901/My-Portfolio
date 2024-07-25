@@ -1,5 +1,5 @@
 ## Screenshots
-![My Logo](https://github.com/HuuVinh0901/My-Portfolio/blob/assets/img/view.PNG)
+![My Logo](https://github.com/HuuVinh0901/My-Portfolio/blob/main/assets/img/view.PNG)
 # Personal Portfolio (https://huu-vinh-dev.vercel.app/)
 > Over complicated portfolio that is simple to **edit** and **deploy** using **vercel**
 
