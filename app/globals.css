@@ -32,8 +32,8 @@ button {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    height: 150vh;
-    font-size: 1.6vw;
+    height: 150dvh;
+    font-size: 1.6dvw;
 }
 
 .hover-effect a {
@@ -46,24 +46,24 @@ button {
 }
 
 .home_nav {
-    margin-top: 8vh;
+    margin-top: 8dvh;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 60vh;
+    height: 60dvh;
     flex-direction: column;
-    margin-left: 2vw;
+    margin-left: 2dvw;
 }
 
 .menu_nav {
     top: 0;
     width: 100%;
     /* position: fixed; */
-    height: 8vh;
+    height: 8dvh;
     justify-content: flex-end;
     display: flex;
-    gap: 7vw;
-    padding-right: 3vw;
+    gap: 7dvw;
+    padding-right: 3dvw;
     align-items: center;
     transition: top 0.3s;
 }
@@ -76,7 +76,7 @@ button {
 }
 
 .custom-button {
-    padding: 0.2vw 0.7vw;
+    padding: 0.2dvw 0.7dvw;
     /* Thêm khoảng trống trong button */
     display: flex;
     /* Sử dụng flexbox để canh giữa nội dung */
@@ -84,7 +84,7 @@ button {
     /* Canh giữa theo chiều dọc */
     justify-content: center;
     /* Canh giữa theo chiều ngang */
-    gap: 0.5vw;
+    gap: 0.5dvw;
     /* Khoảng cách giữa chữ và icon */
     transition: 0.3s;
     /* Hiệu ứng khi hover */
@@ -172,17 +172,17 @@ button {
 }
 .footer {
     width: 100%;
-    height: 80vh;
-    margin-top: 1vw;
+    height: 80dvh;
+    margin-top: 1dvw;
     display: flex;
     flex-direction: column;
 
-    font-size: 1vw;
+    font-size: 1dvw;
 
 }
 
 .footer_content {
-    font-size: 4vw;
+    font-size: 4dvw;
     width: 100%;
     height: 75%;
     display: flex;
@@ -235,7 +235,7 @@ button {
     width: 40%;
     height: 100%;
     margin-left: 40%;
-    gap: 2vw;
+    gap: 2dvw;
     display: flex;
 }
 
@@ -250,31 +250,31 @@ button {
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 1vw;
+    gap: 1dvw;
 }
 
 .text_input {
     width: 100%;
     height: 30%;
-    border: 0.15vw solid #2106b9;
+    border: 0.15dvw solid #2106b9;
     border-radius: 3%;
-    font-size: 0.9rem;
-    padding: 1vw;
+    font-size: 2dvh;
+    padding: 1dvw;
 }
 
 .text_area {
-    margin-top: 1vw;
-    padding: 1vw;
+    margin-top: 1dvw;
+    padding: 1dvw;
     width: 100%;
     height: 50%;
     border: 0.15vw solid #2106b9;
     border-radius: 3%;
     box-sizing: border-box;
-    font-size: 0.9rem;
+    font-size: 2dvh;
 }
 
 .submit {
-    padding: 0.2vw 0.7vw;
+    padding: 0.2dvw 0.7dvw;
     /* Thêm khoảng trống trong button */
     display: flex;
     /* Sử dụng flexbox để canh giữa nội dung */
@@ -282,12 +282,12 @@ button {
     /* Canh giữa theo chiều dọc */
     justify-content: center;
     /* Canh giữa theo chiều ngang */
-    gap: 0.5vw;
+    gap: 0.5dvw;
     /* Khoảng cách giữa chữ và icon */
     transition: 0.3s;
     height: 8%;
     width: 15%;
-    font-size: 0.9rem;
+    font-size: 2dvh;
 
 }
 
