@@ -285,8 +285,6 @@ button {
     gap: 0.5dvw;
     /* Khoảng cách giữa chữ và icon */
     transition: 0.3s;
-    height: 8%;
-    width: 15%;
     font-size: 2dvh;
 
 }
