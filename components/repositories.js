@@ -15,11 +15,11 @@ function createRepoElement(repo, languages) {
     return `
     
         <div class="text-slate-100 p-8 rounded-lg border-solid border-slate-700 border-2 shadow-lg w-full sm:w-100 h-90 hover:border-slate-50 transition duration-300">
-            <h2 class="text-xl sm:text-2xl font-bold" style="font-size:1.5dvw">
+            <h2 class="text-xl sm:text-2xl font-bold" style="font-size:4dvh">
                 <a href="${repo.html_url}" target="_blank" class="hover:text-slate-300">${repo.name}</a>
             </h2>
-            <p class="mt-2">${languages || 'No languages listed'}</p>
-            <p class="mt-4">${repo.description || 'No description'}</p>
+            <p class="mt-2"  style="font-size:2dvh">${languages || 'No languages listed'}</p>
+            <p class="mt-4"  style="font-size:2dvh">${repo.description || 'No description'}</p>
         </div>
     
     `;
