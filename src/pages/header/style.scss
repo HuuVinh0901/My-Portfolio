@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.header_top {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.header_menu {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    position: fixed;
+    padding-right: 5vw;
+    
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 4vw;
+
+        li {
+            font-size: 2vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.img_profile {
+    margin-top: 5vw;
+    border-radius: 50%;
+    width: 20vw;
+    height: 20vw;
+    margin-left: 2vw;
+    
+}
