@@ -53,7 +53,7 @@ const Footer = () => {
               </div>
               <div className="form_submit">
                 <button
-                  className="rounded-full border-solid border-2 hover:border-slate-400 submit"
+                  className="rounded-full hover:border-slate-400 submit"
                   type="submit"
                 >
                   Submit
