@@ -1,7 +1,7 @@
 import { memo } from "react";
 import "./style.scss";
 import TypingEffect from '../../components/TypingEffect';
-import IUHLogo from "../../assets/img/Logo-IUH.jpg";
+import IUHLogo from "../../assets/img/Logo-IUH-removebg.png";
 import Repositories from "../../api/github.js";
 import { BsArrowRight } from "react-icons/bs";
 const Body = () => {
@@ -38,7 +38,7 @@ const Body = () => {
                 <div className="activity ">
 
                     <a className="activity_title hover:text-slate-300" href="https://iuh.edu.vn/">
-                        <img alt="" className="logo" src={IUHLogo} />
+                        <img  alt="" className="logo" src={IUHLogo} />
                         <p>Industrial University of Ho Chi Minh City (IUH) - Student</p>
                     </a>
 

@@ -14,7 +14,11 @@ const Navbar = () => {
                 setNavbarStyle({ transform: "translateY(-100%)", backgroundColor: "transparent" }); // Ẩn navbar
             } else {
                 // Đang cuộn lên
-                setNavbarStyle({ transform: "translateY(0)", backgroundColor: "black" }); // Hiển thị navbar
+                setNavbarStyle({ transform: "translateY(0)", background:'rgba(128, 128, 128, 0.6)',
+                    background:'linear-gradient(45deg, rgba(255, 255, 255, 0.3), rgba(128, 128, 128, 0.7))',
+                    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)', backdropFilter:'blur(10px)', borderBottom: '1px solid rgba(255, 255, 255, 0.3)',
+                    borderRadius:'3vw',width:'50%',marginLeft:'100vw'
+                 }); // Hiển thị navbar
             }
 
             setLastScrollTop(currentScroll <= 0 ? 0 : currentScroll); // Đảm bảo không âm
