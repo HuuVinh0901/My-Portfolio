@@ -10,7 +10,7 @@
 .header_menu {
     display: flex;
     align-items: center;
-    justify-content: end;
+    // justify-content: start;
     width: 100%;
     position: fixed;
     padding-right: 5vw;
@@ -19,12 +19,14 @@
         display: flex;
         list-style: none;
         gap: 4vw;
-
+        margin-left: 40vw;
+        // background-color: aqua;
         li {
             font-size: 2vw;
             display: flex;
-            justify-content: center;
+            // justify-content: center;
             align-items: center;
+            // background-color: rgb(212, 110, 8);
         }
     }
 }
