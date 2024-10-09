@@ -26,7 +26,7 @@ const Navbar = () => {
                     borderBottom: '1px solid rgba(255, 255, 255, 0.3)',
                     // borderRadius: '10px',
                     width: '100%',  // Phủ toàn bộ chiều ngang
-                    padding: '1rem 0', // Tăng chiều cao
+                    padding: '0.8vw', // Tăng chiều cao
                     position: 'fixed',
                     top: 0,
                     left: 0,
