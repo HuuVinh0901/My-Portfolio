@@ -2,7 +2,7 @@ import React, { useState, memo } from 'react';
 import { BsFacebook, BsInstagram, BsLinkedin, BsGithub } from 'react-icons/bs';
 
 import './style.scss';
-import { handleSubmit } from '../../components/submitcontact.js'; // Nhập hàm xử lý
+import { handleSubmit } from '../../components/dataSender'
 
 const Footer = () => {
   const [email, setEmail] = useState('');

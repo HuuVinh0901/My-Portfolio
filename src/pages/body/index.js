@@ -1,6 +1,6 @@
 import { memo } from "react";
 import "./style.scss";
-import TypingEffect from '../../components/TypingEffect';
+import TypingEffect from '../../components/textAnimation.js';
 import IUHLogo from "../../assets/img/Logo-IUH-removebg.png";
 import Repositories from "../../api/github.js";
 import { BsArrowRight } from "react-icons/bs";

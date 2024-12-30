@@ -1,7 +1,7 @@
 import { memo } from "react";
 import "./style.scss";
 import profile from '../../assets/img/MyProfile.jpg';
-import Navbar from "../../components/scroll.js";
+import Navbar from "../../components/stickyNavbar"
 const Header = () => {
     return (
         <>
